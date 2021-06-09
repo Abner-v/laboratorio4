@@ -1,0 +1,140 @@
+        body {
+            margin: 0;
+            background-position: center center;
+            background-image: url('..//imagenes/paisaje.jpg');
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+            width: 100%;
+            height: 100%;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            size: 1.3rem;
+            line-height: 1.6em;
+            color: rgb(255, 253, 253);
+            text-align: center;
+        }
+        
+        p {
+            margin: 1.6em;
+        }
+        
+        .container {
+            width: 90%;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+        
+        .header {
+            background-color: #333;
+            color: white;
+            position: fixed;
+            left: 0;
+            top: 0;
+            right: 0;
+        }
+        
+        .logo-nav-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+        
+        .navigation ul {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+        
+        .navigation ul li {
+            display: inline-block;
+        }
+        
+        .navigation ul li a {
+            display: block;
+            padding: 0.5rem 1rem;
+            transition: all 0.4s linear;
+            text-decoration: none;
+            filter: opacity(1);
+            color: lightblue;
+        }
+        
+        .navigation ul li a:hover {
+            background: #7a7676;
+            border-radius: 5px;
+        }
+        
+        .logo {
+            letter-spacing: 15px;
+            font-size: 1.5em;
+        }
+        
+        .main {
+            padding-top: 5rem;
+        }
+        
+        .menu-icono {
+            display: none;
+        }
+        
+        .header div img {
+            width: 5rem;
+            height: 5rem;
+            padding: 10px;
+        }
+        
+        .main .image img {
+            width: 10rem;
+            height: 10rem;
+            padding: 1rem;
+        }
+        
+        .main .image {
+            text-align: center;
+        }
+        
+        .cat {
+            margin-top: 2rem;
+            background-color: lightgray;
+            border-radius: 5px;
+            filter: opacity(0.5);
+        }
+        
+        .cat .navigation ul li a {
+            color: black;
+            backdrop-filter: initial;
+        }
+        
+        @media only screen and (max-width:954px) {
+            .menu-icono {
+                display: block;
+                cursor: pointer;
+                padding: 0.5rem 1rem;
+            }
+            .navigation ul {
+                display: none;
+            }
+            .navigation ul.show {
+                display: block;
+            }
+            .navigation {
+                width: 100%;
+                margin-top: 1rem;
+            }
+            .navigation ul li {
+                display: block;
+            }
+            .navigation ul li a {
+                display: block;
+                padding: 0.5rem 0;
+                transition: all 0.4s linear;
+            }
+            .navigation ul li a:hover {
+                background: #7a7676;
+                border-radius: 5px;
+            }
+            .logo {
+                letter-spacing: 15px;
+                font-size: 1.5em;
+            }
+        }
